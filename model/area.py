@@ -6,5 +6,7 @@ class Area(db.Model):
     id_area: int = db.Column(db.Integer, primary_key=True)
     nombre: str = db.Column(db.String(255), nullable=False)
 
-    def _init_(self, nombre):
+    def __init__(self, nombre):
         self.nombre = nombre
+
+
